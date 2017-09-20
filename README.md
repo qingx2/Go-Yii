@@ -1,5 +1,8 @@
-Yii 2 & Vue 2
+Go Yii
 ===============================
+
+Yii 2 & Vue 2
+-------------------
 
 
 DIRECTORY STRUCTURE
