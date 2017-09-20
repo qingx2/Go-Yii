@@ -31,6 +31,7 @@ class AlidayuService
         $sendSms->setTemplateCode(array_get($alidayu_params, 'TemplateCode'));
         $sendSms->setTemplateParam([
             'name' => array_get($params, 'name'),
+            'day' => array_get($params, 'day'),
         ]);
         $sendSms->setOutId('demo');
 
