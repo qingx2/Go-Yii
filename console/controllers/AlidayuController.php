@@ -15,8 +15,8 @@ class AlidayuController extends Controller
     public static function actionSend()
     {
         $parmas = [
-            'name' => 'Wendy',
-            'day'  => '271'
+            'name' => 'chishibani',
+            'day'  => '283'
         ];
 
         $service = AlidayuService::sendMsgByPhone('18945051758', $parmas);
