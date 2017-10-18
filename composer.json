@@ -1,6 +1,6 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
-    "description": "Yii 2 Advanced Project Template",
+    "name": "yiisoft/yii2-vue2-app",
+    "description": "Yii2 Vue2 SurprisePeas",
     "keywords": [
         "yii2",
         "vue2",
@@ -20,7 +20,13 @@
     "require": {
         "php": ">=7.0",
         "yiisoft/yii2": "~2.0.6",
-        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-queue": "~2.0.0",
+        "yiisoft/yii2-redis": "~2.0.6",
+        "yiisoft/yii2-apidoc": "~2.1.0",
+        "yiisoft/yii2-mongodb": "~2.1.0",
+        "yiisoft/yii2-authclient": "~2.1.0",
+        "yiisoft/yii2-httpclient": "2.*",
+        "cornernote/yii2-softdelete": "1.0.*",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "illuminate/support": "5.5.*",
         "symfony/var-dumper": "3.3.*",
