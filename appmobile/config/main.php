@@ -39,12 +39,13 @@ return [
         ],
 
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName'  => false,
-            'rules'           => [
-            ],
+            'enablePrettyUrl'     => true,
+//            'enableStrictParsing' => true,
+            'showScriptName'      => false,
+//            "rules"               => [
+//                'GET auth/index' => 'auth/index',
+//            ],
         ],
-
     ],
     'params'              => $params,
 ];
