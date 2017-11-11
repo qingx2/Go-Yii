@@ -8,5 +8,9 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'queue' => [
+            'class'  => \yii\queue\redis\Queue::class,
+            'as log' => \yii\queue\LogBehavior::class,
+        ],
     ],
 ];

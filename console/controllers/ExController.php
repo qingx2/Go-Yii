@@ -7,6 +7,7 @@
 namespace console\controllers;
 
 
+use common\jobs\ThingJob;
 use yii\console\Controller;
 use Yii;
 
@@ -17,16 +18,24 @@ class ExController extends Controller
         $testObject = Yii::createObject([
             'class' => 'backend\components\Test',
             'name'  => 'new test name',
-        ],[20]);
+        ], [20]);
         dd($testObject);
 
         $object = Yii::createObject([
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;dbname=demo',
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=127.0.0.1;dbname=demo',
             'username' => 'root',
             'password' => '',
-            'charset' => 'utf8',
+            'charset'  => 'utf8',
         ]);
         dd($object);
+    }
+
+    public function actionO()
+    {
+        while (true) {
+            Yii::$app->queue->push(new ThingJob());
+            sleep(60);
+        }
     }
 }
