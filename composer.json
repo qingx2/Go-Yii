@@ -31,7 +31,8 @@
         "illuminate/support": "5.5.*",
         "symfony/var-dumper": "3.3.*",
         "flc/dysms": "^1.0",
-        "linslin/yii2-curl": "^1.2"
+        "linslin/yii2-curl": "^1.2",
+        "overtrue/wechat": "~4.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

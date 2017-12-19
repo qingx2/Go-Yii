@@ -8,13 +8,15 @@ namespace appmobile\controllers;
 
 
 use common\baseclass\BaseAPIController;
+use Yii;
 
 class AuthController extends BaseAPIController
 {
     public function actionIndex()
     {
-        $username = \Yii::$app->request->post('name');
-        $password = \Yii::$app->request->post('password');
+        $request = Yii::$app->request;
+        $username = $request->post('name', '');
+        $password = $request->post('password', '');
         if ($username == "admin" && $password == "admin") {
             return ['success' => 1, 'msg' => '100-token'];
         }
