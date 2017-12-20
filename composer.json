@@ -32,7 +32,8 @@
         "symfony/var-dumper": "3.3.*",
         "flc/dysms": "^1.0",
         "linslin/yii2-curl": "^1.2",
-        "overtrue/wechat": "~4.0"
+        "overtrue/wechat": "~4.0",
+        "yii2mod/yii2-enum": "^1.7"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
